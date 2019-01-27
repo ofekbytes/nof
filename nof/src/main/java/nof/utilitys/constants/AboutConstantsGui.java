@@ -1,0 +1,62 @@
+package nof.utilitys.constants;
+
+public abstract class AboutConstantsGui 
+{
+
+	private String aboutTitle = "";
+	private String aboutTitleIcon = "";
+	private String aboutIcon = "";
+	private String aboutName = "";
+	private String aboutVersion = "";
+	private String aboutLicense = "";
+	private String aboutPoweredBy = "";
+	private String aboutDeveloped = "";
+	private String aboutQA = "";
+	
+	
+	//constructor
+	public AboutConstantsGui()
+	{
+		aboutTitle = "NOF...About..";
+		aboutTitleIcon = "/icons/star.jpg";
+		aboutIcon = "/icons/yamon.jpg";
+		aboutName = "Nof";
+		aboutVersion = "1.1.1";
+		aboutLicense = "MIT License";
+		aboutPoweredBy = "Java 8  (1.8)";
+		aboutDeveloped = "Kessler Yaron";
+		aboutQA = "jron, shalom, noam";
+		
+	}
+	
+	public String getAboutTitle() {
+		return aboutTitle;
+	}
+	public String getAboutTitleIcon() {
+		return aboutTitleIcon;
+	}
+	public String getAboutIcon() {
+		return aboutIcon;
+	}
+	public String getAboutName() {
+		return aboutName;
+	}
+	public String getAboutVersion() {
+		return aboutVersion;
+	}
+	public String getAboutLicense() {
+		return aboutLicense;
+	}
+	public String getAboutPoweredBy() {
+		return aboutPoweredBy;
+	}
+	public String getAboutDeveloped() {
+		return aboutDeveloped;
+	}
+	public String getAboutQA() {
+		return aboutQA;
+	}
+	
+	
+	
+}

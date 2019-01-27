@@ -1,4 +1,4 @@
-package nof.gui;
+package nof.temp;
 
 import java.awt.Color;
 import java.awt.Toolkit;
@@ -10,12 +10,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import nof.utilitys.constants.AboutConstantsGui;
-import nof.utilitys.constants.InterfaceAbout;
 
 
-
-public class About implements InterfaceAbout  //todo change to interface.
+public class About
 {
 	private   JFrame    frmAbout      =   null;
 	private   JPanel    panel         =   null;
@@ -36,12 +33,9 @@ public class About implements InterfaceAbout  //todo change to interface.
 
 	public About()
 	{
-		
-		
-		
         //create form
-		frmAbout = new JFrame(aboutTitle);
-		frmAbout.setIconImage(Toolkit.getDefaultToolkit().getImage(About.class.getResource(aboutTitleIcon)));;
+		frmAbout = new JFrame("NOF...About");
+		frmAbout.setIconImage(Toolkit.getDefaultToolkit().getImage(About.class.getResource("/assets/icons/star.jpg")));
 		frmAbout.setResizable(false);
 
         //create panel
@@ -54,7 +48,7 @@ public class About implements InterfaceAbout  //todo change to interface.
 
 
 		lblgif1 = new JLabel("");
-		lblgif1.setIcon(new ImageIcon(About.class.getResource(aboutIcon)));  
+		lblgif1.setIcon(new ImageIcon(About.class.getResource("/assets/icons/yamon.jpg")));
 		lblgif1.setBounds(10, 10, 201, 163);
 		panel.add(lblgif1);
 
@@ -64,9 +58,9 @@ public class About implements InterfaceAbout  //todo change to interface.
 		lblTSof.setBounds(230, 25, 120, 15);
 		panel.add(lblTSof);
 
-		lblVSof = new JLabel(aboutName);
+		lblVSof = new JLabel("NOF");
 		lblVSof.setForeground(Color.GRAY);
-		lblVSof.setBounds(345, 25, 110, 15);
+		lblVSof.setBounds(345, 25, 60, 15);
 		panel.add(lblVSof);
 
 		
@@ -75,9 +69,9 @@ public class About implements InterfaceAbout  //todo change to interface.
 		lblTVer.setBounds(230, 55, 120, 15);
 		panel.add(lblTVer);
 
-		lblVVer = new JLabel(aboutVersion);
+		lblVVer = new JLabel("1.1");
 		lblVVer.setForeground(Color.GRAY);
-		lblVVer.setBounds(345, 55, 110, 15);
+		lblVVer.setBounds(345, 55, 60, 15);
 		panel.add(lblVVer);
 
 		
@@ -86,7 +80,7 @@ public class About implements InterfaceAbout  //todo change to interface.
 		lblTpb.setBounds(230, 85, 120, 15);
 		panel.add(lblTpb);
 
-		lblVpb = new JLabel(aboutLicense);
+		lblVpb = new JLabel("Free for use");
 		lblVpb.setForeground(Color.GRAY);
 		lblVpb.setBounds(345, 85, 110, 15);
 		panel.add(lblVpb);
@@ -97,7 +91,7 @@ public class About implements InterfaceAbout  //todo change to interface.
 		lblTpb.setBounds(230, 115, 120, 15); //105
 		panel.add(lblTpb);
 
-		lblVpb = new JLabel(aboutPoweredBy);
+		lblVpb = new JLabel("Java 1.6 / 1.7");
 		lblVpb.setForeground(Color.GRAY);
 		lblVpb.setBounds(345, 115, 110, 15);
 		panel.add(lblVpb);
@@ -105,23 +99,23 @@ public class About implements InterfaceAbout  //todo change to interface.
 	
 		
 		lblTDev = new JLabel("Developed by : ");
-		lblTDev.setBounds(10, 185, 180, 15);
+		lblTDev.setBounds(10, 185, 140, 15);
 		panel.add(lblTDev);
 
-		lblVDev = new JLabel(aboutDeveloped);
+		lblVDev = new JLabel("Yaron Kessler .");
 		lblVDev.setForeground(Color.GRAY);
-		lblVDev.setBounds(200, 185, 260, 15);
+		lblVDev.setBounds(180, 185, 280, 15);
 		panel.add(lblVDev);
 
 		
 		
 		lblTDev = new JLabel("Quality Assurance by : ");
-		lblTDev.setBounds(10, 210, 180, 15);
+		lblTDev.setBounds(10, 210, 140, 15);
 		panel.add(lblTDev);
 
-		lblVDev = new JLabel(aboutQA);
+		lblVDev = new JLabel("Yaron Kessler .");
 		lblVDev.setForeground(Color.GRAY);
-		lblVDev.setBounds(200, 210, 260, 15);
+		lblVDev.setBounds(180, 210, 280, 15);
 		panel.add(lblVDev);
 		
 				
