@@ -11,4 +11,19 @@ public abstract interface InterfaceAbout
 	public String aboutPoweredBy = "Java 8  (1.8)";
 	public String aboutDeveloped = "Kessler Yaron";
 	public String aboutQA = "jron, shalom, noam";
+	
+	public default String getAboutTitle()
+	{
+		return		aboutTitle + " , " 
+				  + aboutTitleIcon + " , " 
+				  + aboutIcon + " , " 
+				  + aboutName + " , " 
+				  + aboutVersion + " , " 
+				  + aboutLicense + " , "  
+				  + aboutPoweredBy + " , "  
+				  + aboutDeveloped + " , "   
+				  + aboutQA + " , "
+				  ;	
+	}
+	
 }

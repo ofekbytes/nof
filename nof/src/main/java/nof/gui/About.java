@@ -37,7 +37,7 @@ public class About implements InterfaceAbout  //todo change to interface.
 	public About()
 	{
 		
-		
+		System.out.println("interface > " + getAboutTitle());
 		
         //create form
 		frmAbout = new JFrame(aboutTitle);
