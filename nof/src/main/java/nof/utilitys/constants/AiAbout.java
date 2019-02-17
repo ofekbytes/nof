@@ -1,6 +1,6 @@
 package nof.utilitys.constants;
 
-public abstract interface InterfaceAbout 
+public abstract interface AiAbout 
 {
 	public String aboutTitle = "NOF...About..";
 	public String aboutTitleIcon = "/icons/star.jpg";
@@ -12,7 +12,7 @@ public abstract interface InterfaceAbout
 	public String aboutDeveloped = "Kessler Yaron";
 	public String aboutQA = "jron, shalom, noam";
 	
-	public default String getAboutTitle()
+	public default String getAllFields()
 	{
 		return		aboutTitle + " , " 
 				  + aboutTitleIcon + " , " 

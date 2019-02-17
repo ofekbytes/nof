@@ -1,4 +1,4 @@
-package nof.utilitys.constants;
+package nof.temp;
 
 public abstract class AboutConstantsGui 
 {

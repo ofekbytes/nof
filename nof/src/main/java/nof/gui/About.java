@@ -10,12 +10,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import nof.utilitys.constants.AboutConstantsGui;
-import nof.utilitys.constants.InterfaceAbout;
+import nof.utilitys.constants.AiAbout;
 
 
 
-public class About implements InterfaceAbout  //todo change to interface.
+public class About implements AiAbout  //todo change to interface.
 {
 	private   JFrame    frmAbout      =   null;
 	private   JPanel    panel         =   null;
@@ -37,7 +36,7 @@ public class About implements InterfaceAbout  //todo change to interface.
 	public About()
 	{
 		
-		System.out.println("interface > " + getAboutTitle());
+		System.out.println("interface > " + getAllFields());
 		
         //create form
 		frmAbout = new JFrame(aboutTitle);
